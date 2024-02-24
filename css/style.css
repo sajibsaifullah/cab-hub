@@ -1,0 +1,710 @@
+/* Font Family : Lato and Bebus Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@100;300;400;700;900&display=swap');
+/*===============
+  Global Css file
+  ===============
+*/
+body{
+	margin: 0;
+	padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+h1,h2, h3, h4, h5, h6{
+    font-family: 'Lato', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+button{
+    font-family: 'Bebas Neue', cursive;
+}
+.btn-cab {
+    color: #fff;
+    border: 2px solid #101010;
+    background: #101010;
+    padding: 8px 33px;
+    font-size: 20px;
+    transition: .4s ease-in-out;
+}
+.btn-cab:focus{
+    box-shadow: none;
+}
+.btn-cab:hover{
+    background: transparent;
+    color: #101010;
+}
+/* Header Section CSS Start */
+header{
+	position: relative;
+	background: url(../images/hero-sec-bg.png) no-repeat center top;
+	background-size: cover;
+	width: 100%;
+}
+
+.navbar{
+    padding: 1rem 0;
+}
+.nav-item{
+    margin-left: 5px;
+
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 25px;
+    transition: .4s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #333;
+    background: #ffc61a;
+    border-radius: 25px;
+    font-weight: 700;
+
+}
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #333;
+    background: #ffc61a;
+    border-radius: 25px;
+}
+.banner-content{
+    padding: 75px 0 0;
+    text-align: center;
+    margin-bottom: -110px;
+}
+.banner-content h1{
+    color: #ffc61a;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+}
+.banner-content h2{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.banner-content h4 {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    margin-bottom: 75px;
+}
+/* Header Section CSS End */
+
+/* Booking Section Css Start */
+.booking-section {
+    background-color: #ffc61a;
+    padding: 130px 0;
+}
+.booking-section h3{
+    color: #101010;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 900;
+}
+.booking-section h2{
+    color: #101010;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 900;
+    padding-right: 60px;
+}
+.booking-section p{
+    font-size: 18px;
+    margin: 15px 0 25px;
+}
+.booking-form {
+    width: 350px;
+    display: block;
+    margin: 25px auto 0;
+} 
+.form-header{
+    background: #101010;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+.form-header h3{
+    color: #fff;
+    font-size: 26px;
+    margin: 0;
+}
+.form-header h3 span{
+    color: #ffc61a;
+}
+.form-body{
+    background: #fff;
+    padding: 20px;
+}
+.form-body .form-control {
+    border: none;
+    border-bottom: 2px solid #e4e4e4;
+    border-radius: 0px;
+    color: #010101;
+}
+.form-control:focus {
+     box-shadow: none;
+}
+.btn-block {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+/* Booking Section Css End */
+
+/*  */
+/* .services-section {
+    padding: 50px 0;
+} */
+/* .services-section h2{
+    color: #ffc61a;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    line-height: 36px;
+} */
+/* .services-section h2 span{
+    color: #101010;
+    display: block;
+    font-size: 38px;
+    font-weight: 900;
+} */
+/* .srv-title{
+    font-size: 20px;
+}
+.srv-text{
+    text-align: justify;
+} */
+
+.services-section {
+    padding: 50px 0;
+}
+.services-section h2{
+    color: #ffc61a;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    /* line-height: 36px; */
+}
+.services-section h2 span {
+    color: #101010;
+    display: block;
+    font-size: 38px;
+    font-weight: 900;
+}
+.srv-area{
+    margin-top: 125px;
+}
+.srv-box{
+    min-height: 400px;
+}
+.srv-plan {
+    position: relative;
+    background: #f5f4f2;
+    padding: 30px;
+    text-align: center;
+    transition: .4s ease-in-out;
+}
+.srv-plan img {
+    margin-top: -100px;
+}
+.srv-plan h3{
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-weight: 800;
+    font-size: 20px;
+}
+.srv-plan p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 26px;
+    padding: 0 15px;
+}
+ /* .srv-plan h4{
+    text-transform: uppercase;
+    color: #ffc61a;
+    font-size: 32px;
+    font-weight: 900;
+    margin: 25px 0 30px;
+    letter-spacing: 2px;
+    transition: .4s ease-in-out;
+} */
+/* .srv-plan .btn-cab{
+    background: #ffc61a;
+    color: #101010;
+    border: none;
+} */
+.srv-plan:hover{
+    background: #ffc61a;
+    cursor: pointer;
+}
+/* .srv-plan:hover h4{
+    color: #101010;
+} */
+/* .srv-plan:hover .btn-cab{
+    background: #101010;
+    color: #fff;
+} */
+/* .bottom-shape {
+    width: 0px;
+    height: 0;
+    border-bottom: 75px solid #101010;
+    border-left: 75px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: .4s ease-in-out;
+} */
+/* .bottom-shape .fa {
+    position: absolute;
+    top: 38px;
+    left: -32px;
+    color: #ffc61a;
+    font-size: 24px;
+} */
+/* .srv-plan:hover {
+    opacity: 1;
+} */
+
+/*  */
+
+/* Our Tariffs Plan Section CSS Start */
+.tariff-section {
+    padding: 50px 0;
+}
+.tariff-section h2{
+    color: #ffc61a;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    line-height: 36px;
+}
+.tariff-section h2 span{
+    color: #101010;
+    display: block;
+    font-size: 38px;
+    font-weight: 900;
+}
+.trf-area{
+    margin-top: 125px;
+}
+.trf-plan {
+    position: relative;
+    background: #f5f4f2;
+    padding: 30px;
+    text-align: center;
+    transition: .4s ease-in-out;
+}
+.trf-plan img {
+    margin-top: -100px;
+}
+.trf-plan h3{
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-weight: 800;
+}
+.trf-plan p {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0 15px;
+}
+ .trf-plan h4{
+    text-transform: uppercase;
+    color: #ffc61a;
+    font-size: 32px;
+    font-weight: 900;
+    margin: 25px 0 30px;
+    letter-spacing: 2px;
+    transition: .4s ease-in-out;
+}
+.trf-plan .btn-cab{
+    background: #ffc61a;
+    color: #101010;
+    border: none;
+}
+.trf-plan:hover{
+    background: #ffc61a;
+    cursor: pointer;
+}
+.trf-plan:hover h4{
+    color: #101010;
+}
+.trf-plan:hover .btn-cab{
+    background: #101010;
+    color: #fff;
+}
+.bottom-shape {
+    width: 0px;
+    height: 0;
+    border-bottom: 75px solid #101010;
+    border-left: 75px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: .4s ease-in-out;
+}
+.bottom-shape .fa {
+    position: absolute;
+    top: 38px;
+    left: -32px;
+    color: #ffc61a;
+    font-size: 24px;
+}
+.trf-plan:hover .bottom-shape {
+    opacity: 1;
+}
+/* Our Tarrif Plan Section CSS End */
+
+/* Features Section CSS Start */
+.features-section{
+    background: url(../images/features-sec-bg.png) no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.features-section h3 {
+    color: #ffc61a;
+    margin-top: 75px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    word-spacing: 2px;
+}
+.features-section h2 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    margin: -10px;
+    word-spacing: 5px;
+}
+ .features-content h4 {
+    color: #ffc61a;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: left;
+    margin: 100px 0 10px 0;
+}
+.features-section p {
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+    line-height: 25px;
+    margin-right: 20px;
+}
+.featuers-icon {
+    background: #ffc61a;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin-top: 115px;
+    margin-right: 25px;
+    transition: .4s ease-in-out;
+}
+ .featuers-icon .fa {
+    font-size: 34px;
+    margin-top: 18px;
+    margin-left: 9px;
+    color: #161616;
+    transition: .4s ease-in-out;
+}
+.featuers-icon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.featuers-icon:hover .fa {
+    color: #101010;
+    transform: scale(1.1);
+}
+.features-right {
+    padding-left: 100px;
+    margin-top: -10px;
+}
+.features-left {
+    padding-left: 100px;
+}
+.ftr-padding{
+    margin-top: -50px;
+}
+.features-right .fa-cog {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.features-left .fa-star{
+      margin-top: 20px;
+      margin-left: 10px;
+}
+.features-right .fa-hourglass-en{
+    margin-top: 20px;
+    margin-left: 12px;
+}
+.features-section .btn-ftr {
+    background: #ffc61a;
+    color: #101010;
+    border: none;
+    display: block;
+    margin: 50px 150px 0px 560px;
+    padding: 5px 30px;
+    font-size: 24px;
+    transition: .4s ease-in-out;
+}
+.features-section .btn-ftr:hover{
+    background: #101010;
+    color: #fff;
+}
+
+/* Features Sectoin CSS End */
+
+/* Downlaod Section CSS Start */
+.download-section {
+
+}
+ .download-section h3 {
+    text-align: center;
+    margin: 50px 0 10px;
+    text-transform: uppercase;
+    color: #ffc61a;
+    font-weight: 800;
+    font-size: 35px;
+}
+  .download-section h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 42px;
+    margin-top: -10px;
+    word-spacing: 5px;
+}
+.download-section h4 {
+    font-size: 24px;
+    color: #000000;
+    padding-right: 275px;
+    line-height: 33px;
+    font-weight: 900;
+    word-spacing: 2px;
+}
+.download-section p {
+    font-size: 15px;
+    color: #303030;
+    margin: 20px 375px 50px 0px;
+    text-align: left;
+    line-height: 22px;
+    font-weight: 600;
+}
+.download-section a .img-padding{
+    padding-left: 20px;
+}
+.download-content .download-left {
+    padding-top: 50px;
+    padding-left: 180px;
+}
+.download-content .download-img{
+    margin-top: 25px;
+    margin-left: -75px;
+}
+/* Download Section CSS End */
+
+/* Clients Section CSS Start */
+.clients-section{
+    background: url(../images/clients-sec-bg.png) no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.clients-section h3 {
+    text-align: center;
+    color: #ffc61a;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 31px;
+    margin-top: 75px;
+    word-spacing: 5px;
+}
+.clients-section h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-top: -5px;
+}
+.owl-carousel {
+    display: inline;
+    margin-top: 100px;
+}
+.owl-carousel .item {
+    background: #040707;
+    height: 185px;
+    width: 455px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+.owl-carousel .item p{
+    color: #fff;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.owl-carousel .item img{
+    margin-left: 25px;
+}
+.owl-carousel .item h4{
+    color: #ffc61a;
+    text-transform: uppercase;
+    margin-left: 18px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.owl-carousel .item h5{
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 17px;
+    margin-top: -6px;
+}
+.owl-theme .owl-dots, 
+.owl-theme .owl-nav {
+    display: none;
+}
+.no-js .owl-carousel, 
+.owl-carousel.owl-loaded {
+    display: block;
+    padding-left: 125px;
+    padding-bottom: 110px;
+}
+/* Clients Section CSS End */
+
+/* Contact Section CSS Start */
+.contact-section{
+    background: #ffc61a;
+    width: 100%;
+}
+ .contact-section h4{
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 70px;
+    font-size: 30px;
+    font-weight: 800;
+    word-spacing: 2px;
+}
+.contact-section h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 70px;
+    font-weight: 900;
+    word-spacing: 5px;
+    padding-bottom: 60px;
+}
+/* Contact Section CSS End */
+
+/* Footer Section CSS Start */
+footer{
+    background: url(../images/footer-sec-bg.png) no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    /* height: 400px; */
+}
+footer h4 {
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 75px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+footer .design-row {
+    background: #ffc61a;
+    height: 7px;
+    width: 330px;
+}
+footer p{
+    color: #fff;
+    padding: 0px 75px 0px 0px;
+    text-align: left;
+    line-height: 22px;
+    font-size: 16px;
+}
+footer .fa{
+    color: #fff;
+    font-size: 25px;
+    padding: 25px 25px 0px 0px;
+}
+footer ul li {
+    margin-left: 170px;
+    margin-bottom: 18px;
+    margin-top: 40px;
+    font-size: 15px;
+}
+footer .fa {
+    color: #fff;
+    margin-right: -5px;
+}
+footer li {
+    color: #fff;
+    padding-right: 145px;
+}
+.footer-contact{
+    color: #fff;
+    margin-top: 20px;
+}
+footer .fa-envelope{
+    font-size: 15px;
+}
+footer .fa-mouse-pointer{
+    font-size: 20px;
+}
+footer .footer-contact span {
+    /* margin-left: 45px; */
+}
+footer .social-media ul li {
+    display: inline;
+    margin: 0px -70px 0px -70px;
+    transition: .4s ease-in-out;
+}
+footer .social-media {
+    margin-left: 70px;
+}
+footer .social-media ul li:hover .fa{
+    color: #ffc61a;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+footer .download-url span {
+    color: #ffc61a;
+    font-size: 20px;
+    /* margin: 30px 0px -50px 50px; */
+}
+/* Footer Section CSS End */
+
+/* Sticky Class */
+
+
+ 

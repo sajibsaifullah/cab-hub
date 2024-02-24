@@ -1,0 +1,4 @@
+bootstrap.min.css ==> after completing all work ==> set this
+vendor ==> all plugin folder here
+meta tag ==> generate meta tag & include this ==> https://www.seoptimer.com/meta-tag-generator
+
